@@ -1,5 +1,5 @@
 $(document).ready(function() {
-   const apiRoot = 'https://frozen-chamber-26469.herokuapp.com/app/';
+   const apiRoot = '  https://lit-fortress-87113.herokuapp.com/app/';
    const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
    const photosContainer = $('[data-photos-container]');
 
@@ -11,7 +11,7 @@ $(document).ready(function() {
 
       element.attr('data-photo-id', data.id);
       element.find('[data-photo-name-section] [data-photo-name-paragraph]').text(data.name);
-      $("#imageThumb").attr("src", data.content + ".jpg");
+      $("#imageThumb").attr("src", data.content);
 
       return element;
    }
