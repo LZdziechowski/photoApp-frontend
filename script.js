@@ -11,10 +11,7 @@ $(document).ready(function() {
 
       element.attr('data-photo-id', data.id);
       element.find('[data-photo-name-section] [data-photo-name-paragraph]').text(data.name);
-      element.find('[data-photo-name-section] [data-photo-name-input]').val(data.name);
-
-      element.find('[data-photo-content-section] [data-photo-content-paragraph]').text(data.content);
-      element.find('[data-photo-content-section] [data-photo-content-input]').val(data.content);
+      $("#imageThumb").attr("src", data.content + ".jpg");
 
       return element;
    }
