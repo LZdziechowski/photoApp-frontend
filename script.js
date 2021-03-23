@@ -1,5 +1,5 @@
 $(document).ready(function() {
-   const apiRoot = 'http://localhost:8080/app/';
+   const apiRoot = 'https://frozen-chamber-26469.herokuapp.com/app/';
    const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
    const photosContainer = $('[data-photos-container]');
 
